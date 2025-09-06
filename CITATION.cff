@@ -2,17 +2,17 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
 title: "Rapid Flood Extent Mapping and Exposure Assessment — Küçük Menderes Basin (Sep 2024)"
 authors:
-  - family-names: "<Eminoğlu>"
-    given-names: "<Yusuf>"
-    affiliation: "<Department of City and Regional Planning, Dokuz Eylül University>"
+  - family-names: "Eminoğlu"
+    given-names: "Yusuf"
+    affiliation: "Department of City and Regional Planning, Dokuz Eylül University"
     email: "yusuf.eminoglu@deu.edu.tr"
-  - family-names: "<Erdin>"
-    given-names: "<Hilmi Evren>"
-    affiliation: "<Department of City and Regional Planning, Dokuz Eylül University>"
+  - family-names: "Erdin"
+    given-names: "Hilmi Evren"
+    affiliation: "Department of City and Regional Planning, Dokuz Eylül University"
     email: "evren.erdin@deu.edu.tr"
 license: MIT
 date-released: 2025-09-06
-repository-code: "https://github.com/<your-username>/kucuk-menderes-flood-extent-2024"
+repository-code: "https://github.com/yusufeminoglu/kucuk-menderes-flood-extent-2024"
 version: "v1.0.0"
 keywords:
   - Sentinel-1
