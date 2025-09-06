@@ -9,6 +9,8 @@
 ![Study area of the Küçük Menderes Basin](figs/Fig01.png)
 *Figure 1. Study area.*
 
+This study provides a cloud-native workflow for rapid flood-extent mapping and exposure assessment in the Küçük Menderes Basin (Türkiye). Sentinel-1 SAR and Sentinel-2 optical data are processed in Google Earth Engine to build a high-resolution LU/LC baseline and delineate inundation using four complementary detectors: event-specific SAR log-ratio thresholding, MNDWI > 0 (after masking permanent water), an Otsu-derived SAR edge mask with shoreline buffering, and a supervised Random Forest model. The LU/LC model attains 98.39% overall accuracy and the RF flood map 97.43% overall accuracy with a high F1 for the water class; intersecting inundation with demographic and land-use layers yields ~48,264 residents and ~523 ha of cropland within the mapped extent. The pipeline applies slope/permanent-water masks, reports all thresholds via histograms, and is designed for transparent, reproducible, near-real-time use; limitations include the lack of in-situ validation and urban radar artefacts (layover/double-bounce). 
+
 ![Composite Flood Exposure Vulnerability Index (CFEVI)](figs/Fig12.png)
 *Figure 12. CFEVI results.*
 
