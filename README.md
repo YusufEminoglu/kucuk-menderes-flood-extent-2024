@@ -1,7 +1,7 @@
 # Rapid Flood Extent Mapping and Exposure Assessment — Küçük Menderes Basin (Sep 2024)
 
 **Repository:** `kucuk-menderes-flood-extent-2024`  
-**Scope:** Cloud-native workflow for flood-extent mapping and exposure assessment using Sentinel-1/2, Google Earth Engine (GEE), and classical ML (RF/SVM/CART) for the Küçük Menderes Basin, Türkiye (10–14 Sep 2024).
+**Scope:** Cloud-native workflow for flood-extent mapping and exposure assessment using Sentinel-1/2, Google Earth Engine (GEE), and classical ML (RF/SVM/CART) for the Küçük Menderes Basin, Izmir (Sep 2024).
 
 > Code runs in Google Earth Engine (JavaScript) and Google Colab (Python).  
 > Data products and figures are released under **CC BY 4.0**; code is released under **MIT**.
@@ -14,7 +14,6 @@
 - `colab/` — Python script/notebook for hyper-parameter tuning & ROC (reproduces Fig. 6-like panels).  
 - `docs/` — Reproducibility notes and figure guide.  
 - `data/` — Pointers to public datasets & how to request derived rasters (no large files tracked).  
-- `fig/` — (Optional) export folder for figures (not versioned by default).  
 - `other/` — Bibliography and ancillary files.
 
 ## Quick start
