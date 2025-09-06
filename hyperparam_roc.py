@@ -1,4 +1,3 @@
-# Figure 6 – Hyper-parameter tuning + 10-fold ROC
 # Adapt paths or mount your drive accordingly.
 import pandas as pd, numpy as np, matplotlib.pyplot as plt
 from sklearn.model_selection import StratifiedKFold
