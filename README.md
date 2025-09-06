@@ -75,5 +75,5 @@ A `CITATION.cff` is provided for GitHub citation support.
 
 ## Contact
 
-- Maintainer: **Yusuf Eminoğlu** — <yusuf.eminoglu>  
+- Maintainer: **Yusuf Eminoğlu** — yusuf.eminoglu@deu.edu.tr
 - Please open Issues for bugs, questions, or data requests.

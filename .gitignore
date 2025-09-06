@@ -33,7 +33,7 @@ __pycache__/
 *.ovr
 *.aux
 *.lock
-*.gejson
+*.geojson
 *.gpkg-shm
 *.gpkg-wal
 *.geopackage-wal
