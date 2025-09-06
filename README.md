@@ -58,9 +58,9 @@
 ## How to cite
 
 ```
-@article{YourLastName2025_KMB_Flood,
+@article{Eminoglu&Erdin2025_KMB_Flood,
   title   = {Rapid Flood Extent Mapping and Exposure Assessment using SAR and Machine Learning in the Küçük Menderes Basin, Türkiye},
-  author  = {Your Name and Co-authors},
+  author  = {Yusuf Eminoğlu and Hilmi Evren Erdin},
   year    = {2025},
   journal = {Natural Hazards},
   note    = {Preprint / In review. Repository: kucuk-menderes-flood-extent-2024}
@@ -76,5 +76,5 @@ A `CITATION.cff` is provided for GitHub citation support.
 
 ## Contact
 
-- Maintainer: **Your Name** — <your.email@domain>  
+- Maintainer: **Yusuf Eminoğlu** — <yusuf.eminoglu>  
 - Please open Issues for bugs, questions, or data requests.
