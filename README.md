@@ -6,52 +6,51 @@
 > Code runs in Google Earth Engine (JavaScript) and Google Colab (Python).  
 > Data products and figures are released under **CC BY 4.0**; code is released under **MIT**.
 
+![Study area of the Küçük Menderes Basin](figs/Fig01.png)
+*Figure 1. Study area.*
+
+![Composite Flood Exposure Vulnerability Index (CFEVI)](figs/Fig12.png)
+*Figure 12. CFEVI results.*
+
 ---
 
 ## What's here
 
-- `gee/` — GEE JavaScript scripts (LULC mapping; SAR log-ratio threshold; MNDWI & Otsu; RF flood classifier).  
-- `colab/` — Python script/notebook for hyper-parameter tuning & ROC (reproduces Fig. 6-like panels).  
-- `docs/` — Reproducibility notes and figure guide.  
-- `data/` — Pointers to public datasets & how to request derived rasters (no large files tracked).  
+- `gee/` — GEE JavaScript scripts (LULC mapping; SAR log-ratio threshold; MNDWI & Otsu; flood exposure overlay).
+- `colab/` — Python script for hyper-parameter tuning & ROC analysis.
+- `data/` — CSV summaries of model tuning, validation scores, and CFEVI values.
+- `figs/` — PNG figures used in the study.
 - `other/` — Bibliography and ancillary files.
 
 ## Quick start
 
 ### 1) LULC in GEE (RF/SVM/CART)
-1. Open **GEE Code Editor** and create four scripts; copy the contents of:
-   - `gee/lulc_classification.js`
-   - `gee/flood_extent_sar.js`
-   - `gee/otsu_mndwi.js`
-   - `gee/rf_flood_classifier.js`
+1. Open **GEE Code Editor** and create a script from `gee/lulc_rf-svm-cart_hypertune_normidx.js`.
 2. Set **AOI** and **asset IDs** where marked `// TODO: UPDATE_ME`.
-3. Run `lulc_classification.js` to produce the **2024 Aug–Sep** LULC (RF retained).
+3. Run to produce the **2024 Aug–Sep** LULC (RF retained).
 4. Export results to your GEE Assets (GeoTIFF recommended).
 
-### 2) Flood-extent (four detectors)
-- **SAR log-ratio** with **~1.40** linear threshold (event-informed; see histogram panel).  
-- **MNDWI > 0** after permanent-water masking (map + histogram panel).  
-- **Otsu** on SAR-derived edges (final Otsu cut ≈ **−0.1243** for this event).  
-- **RF flood classifier** trained on **910** points (80/20 split; 50 trees).
+### 2) Flood-extent & exposure
+- **SAR log-ratio** with **~1.40** linear threshold (`gee/s1_log_ratio_flood.js`).
+- **MNDWI > 0** after permanent-water masking and **Otsu** on SAR-derived edges (`gee/otsu_mndwi.js`).
+- **Exposure overlay** combining flood masks with population or LULC (`gee/simple_flood_exposure.js`).
 
 ### 3) Hyper-parameter tuning & ROC (Colab)
-- Upload `colab/fig6_hyperparam_roc.py` **or** adapt into a notebook.  
-- Provide CSVs (RF grid, SVM grid, CART sweep, sampled normalized parameters) as in the script header.  
-- Outputs: heatmap/curves (top row) + 10-fold ROC panels (bottom row).
+- Upload `colab/hyperparameter_roc.py` **or** adapt into a notebook.
+- Provide CSVs (RF grid, SVM grid, CART sweep, sampled normalized parameters) as in the script header.
+- Outputs: heatmaps/curves (top row) + 10-fold ROC panels (bottom row).
 
 ## Reproducibility keys (event specifics)
 
-- **Dates:** LULC composite **Aug–Sep 2024**; flood window **10–14 Sep 2024**.  
-- **Masks:** Permanent water (JRC GSW); slope **> 5%** removed (HydroSHEDS).  
-- **Thresholds:** SAR log-ratio ≈ **1.40** (linear); **MNDWI > 0**; Otsu cut **−0.1243**.  
-- **ML flood:** **RF (50 trees)**, 910 labels, **80/20 split**; metrics reported with 10-fold ROC.  
+- **Dates:** LULC composite **Aug–Sep 2024**; flood window **10–14 Sep 2024**.
+- **Masks:** Permanent water (JRC GSW); slope **> 5%** removed (HydroSHEDS).
+- **Thresholds:** SAR log-ratio ≈ **1.40** (linear); **MNDWI > 0**; Otsu cut **−0.1243**.
+- **ML flood:** **RF (50 trees)**, 910 labels, **80/20 split**; metrics reported with 10-fold ROC.
 - **Exposure:** HRSL population overlay + RF LULC.
-
-> See `docs/REPRODUCIBILITY.md` and `docs/FIGURE_GUIDE.md` for step-by-step notes.
 
 ## Data availability
 
-- **Public sources:** Sentinel-1/2 (Copernicus), JRC Global Surface Water, HydroSHEDS, HRSL.  
+- **Public sources:** Sentinel-1/2 (Copernicus), JRC Global Surface Water, HydroSHEDS, HRSL.
 - **Derived rasters** (LULC, flood masks per detector, CFEVI) will be shared via DOI archive upon publication; until then, request via Issues or email (see below).
 
 ## How to cite
@@ -70,7 +69,7 @@ A `CITATION.cff` is provided for GitHub citation support.
 
 ## License
 
-- **Code:** MIT (see `LICENSE-MIT`)  
+- **Code:** MIT (see `LICENSE-MIT`)
 - **Data & figures:** CC BY 4.0 (see `LICENSE-CC-BY-4.0`)
 
 ## Contact
