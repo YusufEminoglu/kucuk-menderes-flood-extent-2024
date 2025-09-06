@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
-title: "Rapid Flood Extent Mapping and Exposure Assessment — Küçük Menderes Basin (Sep 2024)"
+title: "Rapid Flood Extent Mapping and Exposure Assessment using SAR and Machine Learning in the Küçük Menderes Basin, Türkiye"
 authors:
   - family-names: "Eminoğlu"
     given-names: "Yusuf"
