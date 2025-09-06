@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Rapid Flood Extent Mapping and Exposure Assessment — Küçük Menderes Basin (Sep 2024)"
+authors:
+  - family-names: "<Your Last Name>"
+    given-names: "<Your First Name>"
+    affiliation: "<Your Affiliation>"
+    email: "your.email@domain"
+license: MIT
+date-released: 2025-09-05
+repository-code: "https://github.com/<your-username>/kucuk-menderes-flood-extent-2024"
+version: "v1.0.0"
+keywords:
+  - Sentinel-1
+  - Sentinel-2
+  - Google Earth Engine
+  - flood mapping
+  - exposure assessment
+  - Türkiye

@@ -1,0 +1,44 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+.colab_cache/
+
+# Data & large binary artifacts
+/data/*.tif
+/data/*.tiff
+/data/*.tfrecord
+/data/*.zip
+/data/*.7z
+/data/*.tar
+/data/*.tar.gz
+/data/raw/*
+/fig/*.png
+/fig/*.jpg
+/fig/*.pdf
+
+# Geo
+*.aux.xml
+*.ovr
+*.aux
+*.lock
+*.gejson
+*.gpkg-shm
+*.gpkg-wal
+*.geopackage-wal
+*.geopackage-shm
+
+# Build
+dist/
+build/
