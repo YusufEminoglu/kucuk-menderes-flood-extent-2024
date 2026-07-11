@@ -1,6 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it as below."
-title: "Rapid Flood Extent Mapping and Exposure Assessment using SAR and Machine Learning in the Küçük Menderes Basin, Türkiye"
+message: "If you use this repository or refer to the study, please cite the published article as below."
 authors:
   - family-names: "Eminoğlu"
     given-names: "Yusuf"
@@ -10,10 +9,30 @@ authors:
     given-names: "Hilmi Evren"
     affiliation: "Department of City and Regional Planning, Dokuz Eylül University"
     email: "evren.erdin@deu.edu.tr"
-license: MIT
-date-released: 2025-09-06
-repository-code: "https://github.com/yusufeminoglu/kucuk-menderes-flood-extent-2024"
+title: "Rapid Flood Extent Mapping and Exposure Assessment using SAR and Machine Learning in the Küçük Menderes Basin, Türkiye"
 version: "v1.0.0"
+date-released: 2026-06-18
+license: MIT
+repository-code: "https://github.com/YusufEminoglu/kucuk-menderes-flood-extent-2024"
+identifiers:
+  - type: doi
+    value: 10.1007/s11069-026-08292-6
+    description: The published journal article DOI.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Eminoğlu"
+      given-names: "Yusuf"
+    - family-names: "Erdin"
+      given-names: "Hilmi Evren"
+  title: "Rapid flood extent mapping and exposure assessment using SAR and machine learning in the Küçük Menderes Basin, Türkiye"
+  journal: "Natural Hazards"
+  volume: 122
+  issue: 12
+  start: 511
+  year: 2026
+  doi: "10.1007/s11069-026-08292-6"
+  url: "https://doi.org/10.1007/s11069-026-08292-6"
 keywords:
   - Sentinel-1
   - Sentinel-2
@@ -21,3 +40,5 @@ keywords:
   - flood mapping
   - exposure assessment
   - Türkiye
+  - machine learning
+  - random forest
